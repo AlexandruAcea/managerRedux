@@ -4,11 +4,11 @@ import { CardSection } from "./CardSection";
 import { Button } from "./Button";
 
 const Confirm = ({ children, visible, onAccept, onDecline }) => {
-  const { containerStyle, cardSectionStyle, textAligh } = styles;
+  const { containerStyle, cardSectionStyle, textStyle } = styles;
 
   return (
     <Modal
-      animationType="slide"
+      animationType="fade"
       onRequestClose={() => {}}
       transparent
       visible={visible}
@@ -39,10 +39,10 @@ const styles = {
   },
   textStyle: {
     flex: 1,
-    fonstSize: 18,
-    textAligh: "center",
+    fontSize: 18,
+    textAlign: "center",
     lineHeight: 40
   }
 };
 
-export default { Confirm };
+export { Confirm };
